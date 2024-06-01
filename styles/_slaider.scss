@@ -1,0 +1,28 @@
+@import "var";
+@import "mixins";
+
+.slaider {
+    background-color: rgb(247, 247, 247);
+    border: 1px solid rgb(234, 234, 234);
+    
+    &__slaid {
+        height: 777px;
+    }
+
+    &__img {
+        height: 724px;
+    }
+
+    &__click_next {
+        background-image: url(../images/click_next.svg);
+    }
+    
+    &__prev, &__next {
+        width: auto;
+    }
+
+    &__click_prev {
+        background-image: url(../images/click_prev.svg);
+    }
+}
+

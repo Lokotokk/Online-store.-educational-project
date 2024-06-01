@@ -1,0 +1,31 @@
+@import "var";
+@import "mixins";
+
+.footer {
+    padding-top: 24px;
+    padding-bottom: 23px;
+    background-color: $backgroundcolor;
+    @include displayflex;
+    justify-content: space-between;
+
+    &__text {
+        color:#FBFBFB;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    &__icons {
+        @include displayflex;
+        gap: 7px;
+    }
+}
+
+.footer__item:hover .bg{
+    fill: $oftencolor;
+    transition: all 0.3s;
+}
+
+.footer__item:hover .im{
+    fill: white;
+    transition: all 0.3s;
+}

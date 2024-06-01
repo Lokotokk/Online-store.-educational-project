@@ -1,0 +1,16 @@
+@import "var";
+@import "mixins";
+
+.main__content {
+    margin-top: 65px;
+    margin-bottom: 96px;
+    @include displaygrid;
+
+    &__big {
+        grid-column: 1 / 4;
+    }
+
+    &__img {
+        width: 100%;
+    }
+}

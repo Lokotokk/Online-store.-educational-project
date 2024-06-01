@@ -1,0 +1,27 @@
+@import "var";
+
+@mixin displayflex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;  
+    align-items: center;
+}
+
+@mixin displaygrid{
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 30px;
+}
+
+@mixin displaygridTabled{
+    display: grid;
+    grid-template-columns: 232px 232px 232px;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+}
+

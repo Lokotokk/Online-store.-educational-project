@@ -1,0 +1,21 @@
+
+.see__more {
+    text-align: center;
+
+    &_button {
+        color: rgb(242, 99, 118);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        margin-top: 48px;
+        padding: 15px 39px;
+        border: 1px solid rgb(255, 106, 106);
+        background-color: white;
+        transition: all 0.3s;
+    }
+}
+
+.see__more_button:hover {
+    background-color: #F16D7F;
+    color: white;
+}

@@ -1,0 +1,33 @@
+@import "var";
+@import "mixins";
+
+.top__content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    background-color: #F1E4E6;
+
+    &__title {
+        font-weight: 900;
+        font-size: 48px;
+        color:  $backgroundcolor;
+        margin-bottom: 6px;
+    }
+
+    &__title2 {
+        font-weight: 700;
+        font-size: 32px;
+        color: $backgroundcolor;
+
+        &__orange__text{
+            color: $oftencolor;
+        }
+    }
+}
+
+.groupe__3 {
+    padding-left: 16px;
+    border-left: 12px solid $oftencolor;
+}
+

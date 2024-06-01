@@ -1,0 +1,34 @@
+@import "var";
+@import "mixins";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.center {
+    padding-left: calc(50% - $widhtContent / 2);
+    padding-right: calc(50% - $widhtContent / 2);
+}
+
+
+@import "header";
+@import "topcontent";
+@import "maincontent";
+@import "shop";
+@import "seemore";
+@import "footer";
+@import "arrivals";
+@import "slaider";
+@import "product";
+@import "sort";
+@import "shopcatalog";
+@import "cart";
+@import "registration";
+@import "advantages";
+@import "subscribe";
+@import "media";

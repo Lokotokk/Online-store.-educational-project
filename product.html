@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="box-content">
+        <header class="header center">
+            <div class="header__group1">
+                <a href="index.html"><img src="images/logo.svg" alt="logo"></a>
+                <a href="#"><img src="images/loupe.svg" alt="loupe"></a>
+            </div>
+            <div class="header__group2">
+                <div class="burgermenu">
+                    <input type="checkbox" id="burger">
+                    <label for="burger">
+                        <svg width="32" height="23" viewBox="0 0 32 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z" fill="#E8E8E8"/>
+                        </svg>
+                    </label>
+                    <nav class="nav">
+                        <div class="nav__head">
+                            <svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.4158 6.00409L11.7158 1.71409C11.9041 1.52579 12.0099 1.27039 12.0099 1.00409C12.0099 0.73779 11.9041 0.482395 11.7158 0.294092C11.5275 0.105788 11.2721 0 11.0058 0C10.7395 0 10.4841 0.105788 10.2958 0.294092L6.0058 4.59409L1.7158 0.294092C1.52749 0.105788 1.2721 -1.9841e-09 1.0058 0C0.739497 1.9841e-09 0.484102 0.105788 0.295798 0.294092C0.107495 0.482395 0.0017066 0.73779 0.0017066 1.00409C0.0017066 1.27039 0.107495 1.52579 0.295798 1.71409L4.5958 6.00409L0.295798 10.2941C0.20207 10.3871 0.127676 10.4977 0.0769072 10.6195C0.0261385 10.7414 0 10.8721 0 11.0041C0 11.1361 0.0261385 11.2668 0.0769072 11.3887C0.127676 11.5105 0.20207 11.6211 0.295798 11.7141C0.388761 11.8078 0.499362 11.8822 0.621222 11.933C0.743081 11.9838 0.873786 12.0099 1.0058 12.0099C1.13781 12.0099 1.26852 11.9838 1.39038 11.933C1.51223 11.8822 1.62284 11.8078 1.7158 11.7141L6.0058 7.41409L10.2958 11.7141C10.3888 11.8078 10.4994 11.8822 10.6212 11.933C10.7431 11.9838 10.8738 12.0099 11.0058 12.0099C11.1378 12.0099 11.2685 11.9838 11.3904 11.933C11.5122 11.8822 11.6228 11.8078 11.7158 11.7141C11.8095 11.6211 11.8839 11.5105 11.9347 11.3887C11.9855 11.2668 12.0116 11.1361 12.0116 11.0041C12.0116 10.8721 11.9855 10.7414 11.9347 10.6195C11.8839 10.4977 11.8095 10.3871 11.7158 10.2941L7.4158 6.00409Z" fill="#6F6E6E"/>
+                            </svg>                                     
+                        </div>
+                        <div class="nav__name">
+                            <span class="nav__name-text">MENU</span>
+                        </div>
+                        <details open class="nav__details">
+                            <summary class="nav__summary"><span class="nav__heading">MAN</span></summary>
+                            <ul class="nav__list">
+                                <li class="nav__list-li"><a class="nav__list-link" href="#">Accessories</a></li>
+                                <li class="nav__list-li"><a class="nav__list-link" href="#">Bags</a></li>
+                                <li class="nav__list-li"><a class="nav__list-link" href="#">Denim</a></li>
+                                <li class="nav__list-li"><a class="nav__list-link" href="#">T-Shirts</a></li>
+                            </ul>
+                        </details>
+                        <details open class="nav__details">
+                            <summary class="nav__summary"><span class="nav__heading">WOMAN</span></summary>
+                            <ul class="nav__list">
+                                <li class="nav__list-li"><a class="nav__list-link" href="#">Accessories</a></li>
+                                <li class="nav__list-li"><a class="nav__list-link" href="#">Jackets & Coats</a></li>
+                                <li class="nav__list-li"><a class="nav__list-link" href="#">Polos</a></li>
+                                <li class="nav__list-li"><a class="nav__list-link" href="#">T-Shirts</a></li>
+                                <li class="nav__list-li"><a class="nav__list-link" href="#">Shirts</a></li>
+                            </ul>
+                        </details>
+                        <details open class="nav__details">
+                            <summary class="nav__summary"><span class="nav__heading">KIDS</span></summary>
+                            <ul class="nav__list nav__kids">
+                                <li class="nav__list-li"><a class="nav__list-link" href="#">Accessories</a></li>
+                                <li class="nav__list-li"><a class="nav__list-link" href="#">Jackets & Coats</a></li>
+                                <li class="nav__list-li"><a class="nav__list-link" href="#">Polos</a></li>
+                                <li class="nav__list-li"><a class="nav__list-link" href="#">T-Shirts</a></li>
+                                <li class="nav__list-li"><a class="nav__list-link" href="#">Shirts</a></li>
+                                <li class="nav__list-li"><a class="nav__list-link" href="#">Bags</a></li>
+                            </ul>
+                        </details>
+                    </nav>
+                </div>
+                <a class="mobile" href="#"><img class="mobile__img" src="images/human.svg" alt="me"></a>
+                <a class="mobile" href="#"><img class="mobile__img" src="images/basket.svg" alt="basket"></a>
+            </div>
+        </header>
+        <section class="arrivals center">
+            <h1 class="arrivals__h1">NEW ARRIVALS</h1>
+            <nav class="breadcrumps">
+                <ul class="breadcrumps__ul">
+                    <li class="breadcrumps__li"><a href="index.html" class="breadcrumps__link">HOME</a></li>
+                    <li class="breadcrumps__li"><a href="#" class="breadcrumps__link">MEN</a></li>
+                    <li class="breadcrumps__li"><a href="#" class="breadcrumps__link">NEW ARRIVALS</a></li>  
+                </ul>  
+            </nav>
+        </section>
+        <div id="carouselExample" class="carousel slide slaider">
+            <div class="carousel-inner slaider__inner center">
+                <div class="carousel-item active slaider__slaid">
+                <img src="images/slaid1.svg" class="d-block w-100 slaider__img" alt="slaid1">
+                </div>
+                <div class="carousel-item slaid">
+                <img src="..." class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item slaid">
+                <img src="..." class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev slaider__prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon slaider__click_prev" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next slaider__next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon slaider__click_next" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            </div>
+        <section class="product">
+            <p class="product__collection">WOMEN COLLECTION</p>
+            <div class="product__rectangle"></div>
+            <h2 class="product__name">MOSCHINO CHEAP AND CHIC</h2>
+            <p class="product__description">Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize parallel core competencies rather than exceptional portals.</p>
+            <p class="product__price">$561</p>
+            <svg width="642" height="1" viewBox="0 0 642 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M642 -0.00512695H0V1.00333H642V-0.00512695Z" fill="#EF5B70"/>
+                <path d="M0.5 0.498291H641.5H0.5Z" stroke="#EAEAEA" stroke-linejoin="round"/>
+            </svg>            
+            <div class="product__parameters">
+                <select name="CHOOSE COLOR">
+                    <option value="CHOOSE COLOR">CHOOSE COLOR</option>
+                </select>
+                <select name="CHOOSE SIZE">
+                    <option value="CHOOSE SIZE">CHOOSE SIZE</option>
+                </select>
+                <select name="QUANTITY">
+                    <option value="QUANTITY">QUANTITY</option>
+                </select>
+            </div>
+            <button class="product__button">
+                <svg width="27" height="25" viewBox="0 0 27 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="im" d="M5.49847 22.185C5.50635 21.752 5.64091 21.3309 5.88519 20.9748C6.12947 20.6186 6.47261 20.3431 6.87158 20.1828C7.27055 20.0226 7.7076 19.9848 8.12781 20.0741C8.54802 20.1635 8.93269 20.376 9.23358 20.685C9.53447 20.994 9.73817 21.3857 9.81909 21.811C9.90002 22.2363 9.85453 22.6763 9.68842 23.0756C9.52231 23.475 9.24296 23.8161 8.88538 24.0559C8.52779 24.2957 8.10791 24.4237 7.67847 24.4237C7.38955 24.4211 7.10399 24.3611 6.83807 24.2472C6.57216 24.1333 6.3311 23.9676 6.12866 23.7597C5.92623 23.5518 5.76639 23.3057 5.65826 23.0355C5.55013 22.7653 5.49584 22.4763 5.49847 22.185ZM21.3045 24.4237C20.8711 24.4303 20.4453 24.3087 20.0797 24.074C19.7141 23.8393 19.4247 23.5017 19.2471 23.103C19.0696 22.7042 19.0117 22.2618 19.0806 21.8303C19.1496 21.3988 19.3423 20.9971 19.6351 20.6748C19.9278 20.3524 20.3077 20.1236 20.728 20.0165C21.1482 19.9095 21.5903 19.929 21.9997 20.0724C22.4091 20.2159 22.7679 20.4771 23.0317 20.8238C23.2956 21.1706 23.453 21.5877 23.4845 22.0236C23.5269 22.6155 23.3369 23.2004 22.9555 23.6523C22.7706 23.8745 22.5436 24.0574 22.2877 24.1901C22.0319 24.3227 21.7524 24.4025 21.4655 24.4247L21.3045 24.4237ZM8.59351 17.4855C8.38116 17.4851 8.17488 17.414 8.00671 17.2833C7.83855 17.1525 7.71792 16.9694 7.66351 16.7624L3.73651 2.19527H0.978516C0.719001 2.19527 0.470064 2.09128 0.28656 1.90622C0.103056 1.72116 0 1.47018 0 1.20847C0 0.946764 0.103056 0.695782 0.28656 0.510726C0.470064 0.325669 0.719001 0.22168 0.978516 0.22168H4.45752C4.66982 0.222254 4.876 0.293463 5.04413 0.424184C5.21226 0.554905 5.33295 0.737883 5.38751 0.944787L9.31451 15.5119H20.0185L23.5765 7.12665H11.7185C11.459 7.12665 11.2101 7.02266 11.0266 6.83761C10.8431 6.65255 10.74 6.40157 10.74 6.13986C10.74 5.87815 10.8431 5.62717 11.0266 5.44211C11.2101 5.25705 11.459 5.15306 11.7185 5.15306H25.0535C25.2131 5.15352 25.3701 5.19451 25.5099 5.27223C25.6497 5.34995 25.7679 5.46195 25.8535 5.59784C25.9413 5.73569 25.9945 5.89303 26.0084 6.05627C26.0224 6.21951 25.9966 6.38368 25.9335 6.53465L21.5425 16.8935C21.469 17.0684 21.3462 17.2177 21.1895 17.3229C21.0327 17.4281 20.8488 17.4846 20.6605 17.4855H8.59351Z" fill="#EF5B70"/>
+                </svg>
+                Add to Cart   
+            </button>
+        </section>
+        <div class="shop">
+            <div class="shop__bottom center">
+                <article class="shop__bottom__item">
+                    <img class="shop__bottom__item_img" src="images/4.svg" alt="4">
+                    <div class="shop__bottom__item_group5">
+                        <h4 class="shop__bottom__item_h">ELLERY X&nbsp;M&rsquo;O CAPSULE</h4>
+                        <p class="shop__bottom__item_text">Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
+                        <p class="shop__bottom__item_price">$52.00</p>
+                    </div>
+                </article>
+                <article class="shop__bottom__item">
+                    <img class="shop__bottom__item_img" src="images/5.svg" alt="5">
+                    <div class="shop__bottom__item_group5">
+                        <h4 class="shop__bottom__item_h">ELLERY X&nbsp;M&rsquo;O CAPSULE</h4>
+                        <p class="shop__bottom__item_text">Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
+                        <p class="shop__bottom__item_price">$52.00</p>
+                    </div>
+                </article>
+                <article class="shop__bottom__item">
+                    <img class="shop__bottom__item_img" src="images/6.svg" alt="6">
+                    <div class="shop__bottom__item_group5">
+                        <h4 class="shop__bottom__item_h">ELLERY X&nbsp;M&rsquo;O CAPSULE</h4>
+                        <p class="shop__bottom__item_text">Known for her sculptural takes on&nbsp;traditional tailoring, Australian arbiter of&nbsp;cool Kym Ellery teams up&nbsp;with Moda Operandi.</p>
+                        <p class="shop__bottom__item_price">$52.00</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+        <div class="subscribe subscribe__product center">
+            <div class="subscribe__item">
+                <div class="subscribe__img">
+                    <img class="subscribe__img1 subscribe__img1-mobile" src="images/Intersect.png" alt="1">
+                </div>
+                <p class="subscribe__text">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,<span class="subscribe__text-italic"> a pulvinar purus condimentum“</span></p>
+            </div>
+            <div class="subscribe__item2">
+                <p class="subscribe__text2">
+                    <span class="subscribe__name">SUBSCRIBE <br>  
+                    </span>FOR OUR NEWLETTER AND PROMOTION
+                </p> 
+                <form action="GET" name="form" class="subscribe__form">
+                    <input class="subscribe__input" type="email" name="form" placeholder="Enter Your Email">
+                    <button class="subscribe__button" type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <footer class="footer center">
+            <p class="footer__text">
+                &copy; 2022&nbsp; Brand&nbsp; All Rights Reserved.
+            </p>
+            <div class="footer__icons">
+                <a class="footer__item" href="#">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="bg" d="M31.9259 0H0.475342V32H31.9259V0Z" fill="white"/>
+                    <g clip-path="url(#clip0_190_1616)">
+                    <path class="im" d="M16.7402 8.20312C13.5555 8.20312 10.4081 10.3406 10.4081 13.8C10.4081 16 11.6373 17.25 12.3822 17.25C12.6895 17.25 12.8664 16.3875 12.8664 16.1438C12.8664 15.8531 12.1308 15.2344 12.1308 14.025C12.1308 11.5125 14.0304 9.73125 16.4888 9.73125C18.6026 9.73125 20.167 10.9406 20.167 13.1625C20.167 14.8219 19.5058 17.9344 17.3641 17.9344C16.5912 17.9344 15.9301 17.3719 15.9301 16.5656C15.9301 15.3844 16.7495 14.2406 16.7495 13.0219C16.7495 10.9531 13.8349 11.3281 13.8349 13.8281C13.8349 14.3531 13.9001 14.9344 14.1329 15.4125C13.7045 17.2688 12.8292 20.0344 12.8292 21.9469C12.8292 22.5375 12.913 23.1188 12.9689 23.7094C13.0744 23.8281 13.0216 23.8156 13.183 23.7563C14.7474 21.6 14.6916 21.1781 15.3993 18.3562C15.7811 19.0875 16.7681 19.4812 17.5503 19.4812C20.8468 19.4812 22.3274 16.2469 22.3274 13.3313C22.3274 10.2281 19.6641 8.20312 16.7402 8.20312Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_190_1616">
+                    <rect width="11.9193" height="16" fill="white" transform="translate(10.4081 8)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>                    
+                </a>
+                <a class="footer__item" href="#">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="bg" d="M31.6636 0H0.213013V32H31.6636V0Z" fill="white"/>
+                    <g clip-path="url(#clip0_190_1612)">
+                    <path class="im" d="M22.4181 12.7411C22.4281 12.8832 22.4281 13.0253 22.4281 13.1675C22.4281 17.5025 19.1509 22.4974 13.161 22.4974C11.3156 22.4974 9.60132 21.9593 8.1593 21.0253C8.42149 21.0558 8.67357 21.0659 8.94585 21.0659C10.4685 21.0659 11.8702 20.5482 12.9895 19.6649C11.5576 19.6345 10.3576 18.6903 9.94415 17.3908C10.1458 17.4213 10.3475 17.4416 10.5593 17.4416C10.8517 17.4416 11.1442 17.4009 11.4164 17.3299C9.92401 17.0253 8.80465 15.7055 8.80465 14.1116V14.071C9.23825 14.3147 9.74249 14.467 10.2769 14.4873C9.39959 13.8984 8.82483 12.8933 8.82483 11.7563C8.82483 11.1472 8.98614 10.5888 9.26851 10.1015C10.8719 12.0913 13.282 13.3908 15.9844 13.5329C15.934 13.2893 15.9038 13.0355 15.9038 12.7817C15.9038 10.9746 17.3559 9.5025 19.1609 9.5025C20.0987 9.5025 20.9457 9.89844 21.5407 10.538C22.2768 10.3959 22.9827 10.1218 23.6079 9.74616C23.3659 10.5076 22.8516 11.1472 22.176 11.5533C22.8315 11.4822 23.4668 11.2994 24.0516 11.0457C23.608 11.6954 23.0533 12.274 22.4181 12.7411Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_190_1612">
+                    <rect width="15.8924" height="16" fill="white" transform="translate(8.1593 8)"/>
+                    </clipPath>
+                    </defs>
+                    </svg>                    
+                </a>
+            </div>
+        </footer>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

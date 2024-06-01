@@ -1,0 +1,443 @@
+@import "var";
+@import "mixins";
+
+@media (min-width:768px) and (max-width:1024px) {
+    .center {
+        padding-left: calc(50% - $widhtContentTablet / 2);
+        padding-right: calc(50% - $widhtContentTablet / 2);
+    }
+
+    .top__content {
+        gap: 40px;
+
+        &__img {
+            width: 385px;
+        }
+
+        &__title {
+            font-weight: 900;
+            font-size: 44px;
+            line-height: 53px;
+        }
+
+        &__title2 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 29px;
+        }
+    }
+
+    .main__content {
+        margin-top: 20px;
+        margin-bottom: 155px;
+        @include displaygridTabled;
+    }
+
+    .shop {
+       &__text {
+            margin-bottom: 73px;
+        }
+
+        &__bottom{
+            display: grid;
+            grid-template-columns: 360px 360px;
+            justify-content: center;
+            align-items: center;
+            justify-items: center;
+            gap: 16px;
+        }
+    }
+
+    .see__more {    
+        &_button {
+            margin-top: 33px;
+        }
+    }
+
+    .advantages {
+        gap: 48px;
+        padding-top: 48px;
+        padding-bottom: 64px;
+    }
+
+    .subscribe {
+        padding-top: 54px;
+        padding-bottom: 140px;
+        gap: 48px;
+    }   
+
+    .filter-sort {
+        justify-items: end;
+    }
+
+    .cart {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 64px;
+        padding-top: 59px;
+
+        &__create-form {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        &__buttons {
+            justify-content: center;
+            align-items: center;
+            gap: 48px;
+        }
+
+        &__checkout-box {
+            margin-top: 19px;
+        }
+    }
+
+    .slaider {
+        &__slaid {
+            height: 624px;
+        }
+
+        &__img {
+            height: 565px;
+        }
+    }
+
+    .product {
+        margin-top: 0;
+    }
+
+    .registration {
+        gap:22px;
+
+        &__text-name, &__text-description, &__text-list{
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        &__text-name {
+            margin-bottom: 32px;
+        }
+
+        &__text-description {
+            width: 354px;
+        }
+    }
+}
+
+@media (min-width:375px) and (max-width:767px) {
+    .center {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .mobile {
+        display: none;
+        position: absolute;
+    }
+
+    .name {
+        justify-content: center;
+    }
+
+    .mobile__center {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    .registration {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+
+        &__text-name, &__text-description, &__text-list{
+            font-size: 16px;
+            line-height: 19px;
+        }
+
+        &__text-name {
+            margin-bottom: 32px;
+        }
+
+        &__text-description {
+            width: 354px;
+        }
+    }
+
+    .subscribe {
+        gap: 59px;
+        padding-top: 64px;
+        padding-bottom: 109px;
+
+        &__img1-mobile {
+            width: 91px;
+        }
+
+        &__text {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+            text-align: center;
+        }
+
+        &__text-italic {
+            font-size: 18px;
+            font-style: italic;
+            font-weight: 400;
+            line-height: 22px;
+            text-align: center;
+        }
+
+        &__text2 {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+            text-align: center;
+        }
+    
+        &__name {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 37px;
+            text-align: center;
+        }
+
+        &__input {
+            width: 309px;
+            height: 47px;
+        }  
+
+        &__button {
+            width: 96px;
+            height: 47px;
+            margin-left: -67px;
+        }
+    }
+
+    .footer {
+        padding-top: 43px;
+        padding-bottom: 24px;
+        flex-direction: column-reverse;
+        gap: 23px;
+    }
+
+    .form {
+        margin-bottom: 63px;
+    }
+
+    .cart {
+        display: flex;
+        gap: 48px;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 39px;
+
+        &__box {
+            gap: 32px;
+        }
+
+        &__item {
+            width: 358px;
+            gap: 17px;
+        }
+
+        &__img > img {
+            height: 188px;
+            vertical-align: bottom;
+        }
+
+        &__description {
+            padding-top: 14px;
+            padding-bottom: 0;
+        }
+
+        &__h2 {
+            width: 144px;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 19px;
+            text-align: left;
+            padding-bottom: 25px;
+        }
+
+        &__detail {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            text-align: left;
+            padding-bottom: 3px;
+        }
+
+        &__form-quantity {
+            width: 24px;
+            padding-left: 0px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 22px;
+            text-align: center;
+            margin-left: 15px;
+        }
+
+        &__close {
+            top: 17px;
+            right: 12px;
+        }
+
+        &__close svg{
+            width: 10px;
+            height: 11px;
+        }
+
+        &__clear, &__continue {
+            width: 175px;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14.4px;
+            text-align: center;
+            text-transform: none;
+            padding: 9px 17px 10px 18px;
+        }
+
+        &__form-button {
+            text-transform: none;
+        }
+    }
+
+    .arrivals {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .breadcrumps__ul {
+        padding-left: 0;
+    }
+
+    .slaider__slaid {
+        height: 624px;
+    }
+
+    .slaider__img {
+        height: 454px;
+    }
+
+    .product {
+        margin-bottom: 64px;
+
+        &__collection {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+        }
+    
+        &__name {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    
+        &__description {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: center;
+            width: 326px;
+        }
+    
+        &__price {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 31px;
+            margin-bottom: 32px;
+        }
+
+        &__parameters {
+            font-size: 10px;
+            font-weight: 400;
+            line-height: 12px;
+            margin-top: 49px;
+        }
+    }
+
+    .product > svg {
+        width: 175px;
+    }
+
+    .shop__bottom {
+        grid-template-columns: 360px;
+        gap: 0px;
+    }
+
+    .subscribe__product {
+        margin-top: 64px;
+    }
+
+    .top__content {
+        justify-content: center;
+        align-items: center;
+        height: 363px;
+
+        &__title {
+            font-size: 38px;
+            font-weight: 900;
+            line-height: 46px;
+            text-align: left;
+        }
+
+        &__title2 {
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 24px;
+        }
+    }
+
+    .main__content {
+        display: flex;
+        gap: 32px;
+        flex-direction: column;
+    }
+
+    .filter-sort {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 360px;
+    }
+
+    .filter__heading {
+        display: none;
+        position: absolute;
+    }
+
+    .filter__summary > svg{
+        width: 38px;
+        height: 25px;
+    }
+
+    .filter__summary {
+        padding-left: 0;
+        gap: 0;
+    }
+
+    .sort {
+        position: absolute;
+        right: 32px;
+        top: 44px;
+    }
+
+    .sort__heading {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 14px;
+    }
+
+    .filter[open]~.sort {
+        display: none;
+        z-index: 0;
+    }
+}

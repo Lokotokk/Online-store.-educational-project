@@ -1,0 +1,116 @@
+@import "var";
+@import "mixins";
+
+.product {
+    margin-left: calc(50% - $widhtContent / 2);
+    margin-right: calc(50% - $widhtContent / 2);
+    padding-top: 65px;
+    padding-bottom: 65px;
+    margin-top: -63px;
+    margin-bottom: 128px;
+    background-color: white;
+    @include displayflex;
+    flex-direction: column;
+    border: 1px solid rgb(234, 234, 234);
+    position: relative;
+    z-index: 1;
+    background-color: rgb(255, 255, 255);
+
+    &__collection {
+        color: $oftencolor;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        margin-bottom: 0;  
+    }
+
+    &__rectangle {
+        width: 63px;
+        height: 3px;
+        background-color: #EF5B70;
+        margin-top: 12px;
+        margin-bottom: 12px;
+    }
+
+    &__name {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 22px;
+        color: #4D4D4D;
+        margin-bottom: 48px;
+    }
+
+    &__description {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        color: #5E5E5E;
+        text-align: center;
+        margin-bottom: 32px;
+        width: 566px;
+    }
+
+    &__price {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 29px;
+        color: #EF5B70;
+        margin-bottom: 65px;
+    }
+
+    &__parameters{
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        margin-top: 65px;
+    }
+
+    select {
+        appearance: none;
+        border: none;
+        position: relative;
+        outline: none;
+        padding: 5px;
+        padding-right: 40px;
+    }
+
+    select::after {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 25px;
+        background-image: url(../images/arrow.svg);
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+
+    &__button {
+        margin-top: 44px;
+        font-family: Lato;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        color: #F26376;
+        border: 1px solid #FF6A6A;
+        padding: 15px 57px 9px 24px;
+        @include displayflex;
+        gap:23px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    &__button:hover {
+        background-color: $oftencolor;
+        color: white;
+        transition: all 0.3s;
+    }
+
+    &__button:hover .im{
+        fill:white;
+        transition: all 0.3s;
+    }
+    
+}
+
+
+

@@ -1,0 +1,123 @@
+@import "var";
+@import "mixins";
+
+.registration {
+    padding-top: 64px;
+    padding-bottom: 96px;
+    display: flex;
+    justify-content: space-between;
+
+    &__text-description, &__text-name, &__text-list {
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 29px;
+
+    }
+
+    &__text-name {
+        font-weight: 400;
+        margin-bottom: 22px;
+    }
+
+    &__text-description {
+        font-weight: 400;
+        margin-bottom: 21px;
+        width: 652px;
+    }
+
+    &__text-list li {
+        margin-bottom: 16px;
+        list-style-type: none;
+    }
+
+    &__text-list li::before {
+        content: url(../images/check.svg);
+        margin-right: 22px;    
+    }
+
+    &__form-name {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19px;
+        color: #222222;
+        margin-bottom: 20px;
+
+    }
+
+    &__form-firstname, &__form-lastname {
+        display: block;
+        margin-bottom: 20px;
+        border: 1px solid #A4A4A4;
+        color: #B1B1B1;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        text-align: left;
+        padding-top: 13px;
+        padding-bottom: 16px;
+        padding-left: 17px;
+        width: 360px;
+        box-sizing: border-box;
+    }
+
+    &__checkbox-text {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 13px;
+
+    }
+
+    &__radio {
+        display: flex;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    &__radio1, &__radio2{
+        display: flex;
+        justify-content: flex-start;
+        gap: 10px;
+        margin-top: 11px;
+        margin-bottom: 33px;
+    }
+
+    &__form-text {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 16px;
+        color: #B1B1B1;
+        width: 359px;
+        margin-bottom: 39px;
+    }
+
+    &__form-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        background: #FFFFFF;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        padding: 16px 29px 17px 29px;
+        color: #000000;
+        border: 1px solid #A4A4A4;
+        text-transform: uppercase;
+    }
+
+    &__form-button path {
+        fill: #000000;
+    }
+
+    &__form-button:hover {
+        color: #FFFFFF;
+        background: $oftencolor;
+        transition: all 0.3s;
+        border: 1px solid transparent;
+    }
+
+    &__form-button:hover path {
+        fill: #FFFFFF;
+        transition: all 0.3s;
+    }
+}
